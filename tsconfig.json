@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es5",
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es2015", "dom"],
+    "jsx": "React"
+  },
+  "files": [
+    "app/react/helloworld.tsx"
+  ]
+}

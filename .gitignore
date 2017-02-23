@@ -1,0 +1,13 @@
+node_modules/
+aot/
+dist/
+app/data/*.metadata.json
+app/data/*.ngsummary.json
+app/data/*.js
+app/data/*.js.map
+app/ng1/*.js
+app/ng2/**/*.js
+app/ng2/**/*.js.map
+app/react/**/*.js
+app/react/**/*.js.map
+.idea
