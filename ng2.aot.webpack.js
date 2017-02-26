@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var path = require("path");
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-var WrapperPlugin = require('wrapper-webpack-plugin');
+var wrapper = require('./base.webpack').wrapper;
 
 module.exports = {
     "entry": {
@@ -49,9 +49,6 @@ module.exports = {
             },
             sourceMap: true
         }),
-        new WrapperPlugin({
-            header: 'var __t0=window.performance.now();\n',
-            footer: 'console.log(window.performance.now()-__t0);'
-        })
+        wrapper
     ]
 }
