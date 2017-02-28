@@ -10,4 +10,6 @@ app/ng2/**/*.js
 app/ng2/**/*.js.map
 app/react/**/*.js
 app/react/**/*.js.map
+app/vue-ts/*.js
+app/vue-ts/*.js.map
 .idea

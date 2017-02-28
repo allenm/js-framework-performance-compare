@@ -3,13 +3,18 @@
     "module": "es2015",
     "target": "es5",
     "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": ["es2015", "dom"],
     "jsx": "React"
   },
+  "exclude": [
+    "node_modules"
+  ],
   "files": [
-    "app/react/helloworld.tsx"
+    "app/react/helloworld.tsx",
+    "app/vue-ts/hello.ts"
   ]
 }

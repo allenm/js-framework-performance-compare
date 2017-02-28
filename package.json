@@ -6,6 +6,7 @@
   "scripts": {
     "start-react": "webpack-dev-server --config react.webpack.js",
     "build-react": "NODE_ENV=production webpack --config react.webpack.js",
+    "start-vue-ts": "webpack-dev-server --config vue.ts.webpack.js",
     "start-vue": "webpack-dev-server --config vue.webpack.js",
     "build-vue": "NODE_ENV=production webpack --config vue.webpack.js --hide-modules",
     "start-ng1": "webpack-dev-server --config ng1.webpack.js",
@@ -14,7 +15,7 @@
     "build-ng2": "NODE_ENV=production webpack --config ng2.webpack.js",
     "build-ng2-aot": "NODE_ENV=production ngc -p aot.tsconfig.json && webpack --config ng2.aot.webpack.js --progress",
     "start-server": "webpack-dev-server --config static.server.webpack.js",
-    "build-all":"npm run build-react && npm run build-vue && npm run build-ng1 && npm run build-ng2 && npm run build-ng2-aot",
+    "build-all": "npm run build-react && npm run build-vue && npm run build-ng1 && npm run build-ng2 && npm run build-ng2-aot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -53,6 +54,7 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "vue": "^2.1.10",
+    "vue-class-component": "^5.0.0",
     "zone.js": "^0.7.7"
   }
 }
